@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-progress-bar",
+  "version": "1.0.0",
+  "description": "A small progress bar component to use with Bootstrap UI library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/tape/bin/tape -r babel-register test/**/*.js | tap-notify | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luispablo/bootstrap-progress-bar.git"
+  },
+  "keywords": [
+    "progressbar",
+    "bootstrap"
+  ],
+  "author": "@luispablo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luispablo/bootstrap-progress-bar/issues"
+  },
+  "homepage": "https://github.com/luispablo/bootstrap-progress-bar#readme"
+}
