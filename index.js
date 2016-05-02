@@ -5,14 +5,11 @@ const DEFAULT_MESSAGE = "";
 
 const ProgressBar = (props) => {
 	const style = { width: props.width || DEFAULT_WIDTH };
+	const className = "progress-bar progress-bar-info progress-bar-striped active";
+	const span = React.createElement("span", null, props.message || DEFAULT_MESSAGE);
+	const innerDiv = React.createElement("div", { className, style }, span);
 
-	return (
-		<div className="progress">
-			<div className="progress-bar progress-bar-info progress-bar-striped active" style={style}>
-				<span>{props.message || DEFAULT_MESSAGE}</span>
-			</div>
-		</div>
-	);
+	return React.createElement("div", { className: "progress" }, innerDiv);
 };
 
 module.exports = ProgressBar; // eslint-disable-line no-undef
