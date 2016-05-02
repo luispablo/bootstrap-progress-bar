@@ -1,4 +1,4 @@
-import React from "react"; // eslint-disable-line no-unused-vars
+const React = require("react"); // eslint-disable-line no-unused-vars, no-undef
 
 const DEFAULT_WIDTH = "100%";
 const DEFAULT_MESSAGE = "";
@@ -15,4 +15,4 @@ const ProgressBar = (props) => {
 	);
 };
 
-export default ProgressBar;
+module.exports = ProgressBar; // eslint-disable-line no-undef
