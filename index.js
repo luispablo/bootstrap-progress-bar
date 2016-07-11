@@ -7,7 +7,7 @@ var ProgressBar = function (props) {
 	var style = { width: props.width || DEFAULT_WIDTH };
 	var className = "progress-bar progress-bar-info progress-bar-striped active";
 	var span = React.createElement("span", null, props.message || DEFAULT_MESSAGE);
-	var innerDiv = React.createElement("div", { className, style }, span);
+	var innerDiv = React.createElement("div", { className: className, style: style }, span);
 
 	return React.createElement("div", { className: "progress" }, innerDiv);
 };
